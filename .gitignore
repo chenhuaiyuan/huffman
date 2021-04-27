@@ -1,6 +1,5 @@
 # Binaries for programs and plugins
 main
-huffman
 *.exe
 *.exe~
 *.so
