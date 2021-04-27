@@ -291,7 +291,7 @@ fn read_head(content []byte, start ...int) ([]byte, int) {
 	return block, n
 }
 
-// @description 加密
+// @description 压缩内容
 // @param {[]byte} b 需要加密的byte数组
 // @return {[]byte} 返回已经加密的byte数组
 // @return {[]byte} Huffman树
@@ -342,7 +342,7 @@ pub fn encode(b []byte) ([]byte, []byte) {
 	return code, header
 }
 
-// @description 解密
+// @description 解压内容
 // @param {[]byte} b 需要解密的byte数组
 // @param {int} num 字符数
 // @param {&Node} tree Huffman树
